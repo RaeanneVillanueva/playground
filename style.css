@@ -63,7 +63,7 @@ html, body {
   transform: scale(1.5);
 }
 
-.img-card [aria-expanded="true"] .see-more {
+.img-card[aria-expanded="true"] .see-more {
   display: none;
 }
 
