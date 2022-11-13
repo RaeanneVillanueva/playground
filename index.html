@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Rae's Playground</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <section class="parallax-carousel-demo d-flex flex-column align-items-center justify-content-center p-2 py-3">
+    <div class="section-desc">
+      <h1 class="text-center">Parallax Carousel</h1>
+      <p class="text-center">Bootstrap Carousel with parallax effect, purely using HTML and CSS.</p>
+    </div>
+    <div id="headerCarousel" class="header-carousel w-100 carousel carousel-light slide carousel-fade"
+      data-bs-ride="carousel">
+
+      <div class="carousel-indicators align-items-center">
+        <button type="button" data-bs-target="#headerCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#headerCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#headerCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+
+      <!-- Image container -->
+      <div class="carousel-inner">
+        <div class="carousel-item parallax-header active" data-bs-interval="5000">
+          <img src="/images/raewebsite-slide.png" class="d-block w-100 h-100 carousel-img" alt="Image Slide 1">
+          <div class="carousel-caption d-block">
+            <h1 class="text-dark">Slide 1</h1>
+          </div>
+        </div>
+
+        <div class="carousel-item parallax-header" data-bs-interval="5000">
+          <img src="/images/intercon-slide.png" class="d-block w-100 h-100 carousel-img" alt="Image Slide 2">
+          <div class="carousel-caption d-block">
+            <h1 class="text-dark">Slide 2</h1>
+          </div>
+        </div>
+
+        <div class="carousel-item parallax-header" data-bs-interval="5000">
+          <img src="/images/kunboys-slide.png" class="d-block w-100 h-100 carousel-img" alt="Image Slide 3">
+          <div class="carousel-caption d-block">
+            <h1>Slide 3</h1>
+          </div>
+        </div>
+      </div>
+      <div class="divider header-divider position-absolute bottom-0 w-100"></div>
+    </div>
+  </section>
+  </section>
+  <section class="button-demo d-flex flex-column align-items-center justify-content-center p-2 py-3">
+    <div class="section-desc">
+      <h1 class="text-center">Icon Button with Text on Hover</h1>
+      <p class="text-center">Purely HTML and CSS animated button.</p>
+    </div>
+
+    <div class="button-demo-container p-3">
+      <div class="inner rounded-pill text-center">
+        <span>
+          <span class="label me-2">See More</span>
+          <i class="fa-solid fa-caret-down"></i>
+        </span>
+      </div>
+    </div>
+  </section>
+  <section class="card-demo d-flex flex-column align-items-center justify-content-center p-2 py-3">
+    <div class="section-desc">
+      <h1 class="text-center">Cards</h1>
+      <p class="text-center">Customized cards combining Boostrap Card and Collapse components.</p>
+    </div>
+
+    <div class="d-flex flex-column flex-sm-row">
+      <div class="service-card m-3 rounded-2">
+        <div class="img-card position-relative text-center" data-bs-toggle="collapse" data-bs-target="#card1">
+          <img src="/images/softdev.png" class="card-img-top" alt="Software Development">
+          <div class="position-absolute top-50 start-50 translate-middle">
+            <h5 class="card-title text-white">Card 1</h5>
+            <a data-bs-toggle="collapse" href="#card1" class="see-more text-decoration-none">
+              <div class="inner rounded-pill">
+                <span>
+                  <span class="label me-2">See More</span>
+                  <i class="fa-solid fa-caret-down"></i>
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="collapse" id="card1">
+          <div class="card card-body border-0 shadow-sm">
+            <span>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.
+            </span>
+            <a href="#card1" data-bs-toggle="collapse" class="text-decoration-none ms-auto text-primary">
+              <i class="fa-solid fa-caret-up minimize-btn"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="service-card m-3 rounded-2">
+        <div class="img-card position-relative text-center" data-bs-toggle="collapse" data-bs-target="#card2">
+          <img src="/images/seo.png" class="card-img-top" alt="SEO">
+          <div class="position-absolute top-50 start-50 translate-middle">
+            <h5 class="card-title text-white">Card 2</h5>
+            <a data-bs-toggle="collapse" href="#card2" class="see-more text-decoration-none">
+              <div class="inner rounded-pill">
+                <span>
+                  <span class="label me-2">See More</span>
+                  <i class="fa-solid fa-caret-down"></i>
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="collapse" id="card2">
+          <div class="card card-body border-0 shadow-sm">
+            <span>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.
+            </span>
+            <a href="#card2" data-bs-toggle="collapse" class="text-decoration-none ms-auto text-primary">
+              <i class="fa-solid fa-caret-up minimize-btn"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="service-card m-3 rounded-2">
+        <div class="img-card position-relative text-center" data-bs-toggle="collapse" data-bs-target="#card3">
+          <img src="/images/customer.png" class="card-img-top" alt="Customer Service">
+          <div class="position-absolute top-50 start-50 translate-middle">
+            <h5 class="card-title text-white">Card 3</h5>
+            <a data-bs-toggle="collapse" href="#card3" class="see-more text-decoration-none">
+              <div class="inner rounded-pill">
+                <span>
+                  <span class="label me-2">See More</span>
+                  <i class="fa-solid fa-caret-down"></i>
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="collapse" id="card3">
+          <div class="card card-body border-0 shadow-sm">
+            <span>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.
+            </span>
+            <a href="#card3" data-bs-toggle="collapse" class="text-decoration-none ms-auto text-primary">
+              <i class="fa-solid fa-caret-up minimize-btn"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/18c9ce5c85.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

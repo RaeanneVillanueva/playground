@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+.lato-regular, h1, h2, h3 {
+  font-family: lato,sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.lato-light, p, span {
+  font-family: lato,sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.header-carousel .parallax-header {  
+  clip-path: inset(0);
+  height: 37.5rem;
+}
+
+.header-carousel .parallax-header .carousel-img {
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.header-carousel .carousel-indicators {
+  bottom: 20%;
+}
+
+.header-carousel .carousel-indicators .active {
+  background-clip: padding-box;
+  background-color: #0E84C6;
+  height: 6px;
+}
+
+.button-demo-container {
+  border-radius: 5px;
+}
+
+.button-demo {
+  background-color: #f6f6f6;
+}
+
+.service-card {
+  width: 15rem;
+}
+
+.img-card {
+  overflow: hidden;
+  cursor: pointer;
+}
+  
+.service-card .img-card img {
+  transition: transform .5s ease;
+}
+
+.img-card:hover img {
+  transform: scale(1.5);
+}
+
+.img-card [aria-expanded="true"] .see-more {
+  display: none;
+}
+
+.see-more {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+}
+
+.inner {
+  background-color: white;
+  transition: all .5s ease;
+  width: 24px;
+  margin: auto;
+  cursor: pointer;
+}
+
+.inner .label {
+  transition: all .5s ease;
+  font-size: 0pt;
+  margin: -12px;
+}
+
+.inner .fa-caret-down {
+  color: #0E84C6;
+}
+.inner:hover {
+  background-color: white;
+  width: 110px;
+}
+
+.inner:hover .label {
+  color: #0E84C6;
+  font-size: 10pt;
+  margin: 0px;
+}
+
+.inner:hover .fa-circle-caret-down {
+  color: #0E84C6;
+}
+
+.minimize-btn {
+  transition: all .5s ease;
+}
+
+.minimize-btn:hover {
+  color: white;
+  background-color: #0E84C6;
+  padding: 3px 6px;
+  border-radius: 100px;
+}
